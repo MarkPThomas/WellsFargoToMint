@@ -53,41 +53,12 @@ namespace MPT.WellsFargoToMint.Core
             //01 / 02 / 2016,TestD,Financial,$1.00
             //01 / 03 / 2016,TestE,Financial,$1.00
 
-            // Sample CSV (Mine)
-            //"09/22/2017","-69.42","*","","CHASE CREDIT CRD AUTOPAY 170921 000000000055583 THOMAS MARK P"
-            //"09/22/2017","-3129.86","*","","CARDMEMBER SERV WEB PYMT 170921 ***********6416 THOMAS,MARK P 04"
-            //"09/19/2017","-85.08","*","","LIBERTY MUTUAL PAYMENT 170919 AOS26845535340 THOMAS MARK P"
-            //"09/19/2017","-14.75","*","","LIBERTY MUTUAL PAYMENT 170919 H4726191981140 THOMAS MARK P"
-            //"09/15/2017","-25.00","*","","RECURRING TRANSFER TO THOMAS M SAVINGS REF #OP03RH9VM5 XXXXXX4765"
-            //"09/15/2017","5302.50","*","","Computers And St WF PAYROLL 170915 1802 Thomas, Mark"
-            //"09/11/2017","-2255.10","*","","CARDMEMBER SERV WEB PYMT 170911 ***********6416 THOMAS,MARK P 03"
-            //"09/11/2017","-17.32","*","","PURCHASE AUTHORIZED ON 09/11 ARCO AMPM 82914 MONTECA CA P00000000339806359 CARD 1849"
-            //"09/07/2017","-4000.00","*","","ONLINE TRANSFER TO THOMAS M REF #IB03QSQVPB CUSTOM MANAGEMENT(RM) 3RD TAX PAYMENT"
-            //"09/06/2017","-592.74","*","","Regence BCBS UT Auto Debit 170905 000000861091674 MARK P THOMAS"
-            //"08/22/2017","-42.72","*","","CHASE CREDIT CRD AUTOPAY 170821 000000000055140 THOMAS MARK P"
-            //"08/18/2017","6510.00","*","","Computers And St WF PAYROLL 170818 1802 Thomas, Mark"
-            //"08/17/2017","-85.08","*","","LIBERTY MUTUAL PAYMENT 170817 AOS26845535340 THOMAS MARK P"
-            //"08/17/2017","-14.75","*","","LIBERTY MUTUAL PAYMENT 170817 H4726191981140 THOMAS MARK P"
-            //"08/15/2017","-25.00","*","","RECURRING TRANSFER TO THOMAS M SAVINGS REF #OP03NSHKN4 XXXXXX4765"
-            //"07/28/2017","1650.60","*","","MOBILE DEPOSIT : REF NUMBER :013280280156"
-            //"07/28/2017","277.42","*","","MOBILE DEPOSIT : REF NUMBER :913280279804"
-            //"07/24/2017","-836.58","*","","CHASE CREDIT CRD AUTOPAY 170721 000000000107103 THOMAS MARK P"
-            //"07/21/2017","4383.75","*","","Computers And St WF PAYROLL 170721 1802 Thomas, Mark"
-            //"07/19/2017","-85.08","*","","LIBERTY MUTUAL PAYMENT 170719 AOS26845535340 THOMAS MARK P"
-            //"07/19/2017","-14.75","*","","LIBERTY MUTUAL PAYMENT 170719 H4726191981140 THOMAS MARK P"
-            //"07/17/2017","-25.00","*","","RECURRING TRANSFER TO THOMAS M SAVINGS REF #OP03LCDH68 XXXXXX4765"
-            //"07/13/2017","-100.00","*","","ATM WITHDRAWAL AUTHORIZED ON 07/13 3885 WASATCH BLVD SALT LAKE CTY UT 0004697 ATM ID 4665S CARD 1849"
-            //"07/11/2017","-1490.98","*","","CARDMEMBER SERV WEB PYMT 170711 ***********6416 THOMAS,MARK P 01"
-            //"07/10/2017","-2856.59","*","","CARDMEMBER SERV WEB PYMT 170707 ***********6416 THOMAS,MARK P 02"
-            //"06/26/2017","-5.00","*","","NON-WELLS FARGO ATM TRANSACTION FEE"
-            //"06/26/2017","-103.36","*","","NON-WF ATM WITHDRAWAL AUTHORIZED ON 06/24 GRKB MAIENFELD-RAST. Maienfeld CHE 00387175430180108 ATM ID 774004 CARD 1849"
-
+            
             string amount = "-5.00";
             string category = "Financial";
             string date = "06/26/2017";
             string merchant = "NON-WELLS FARGO ATM TRANSACTION FEE";
-
-            //Transaction transaction = new Transaction(amount, category, date, merchant);
+            
             Transaction transaction = new Transaction();
             transaction.Fill(amount, category, date, merchant);
         }
